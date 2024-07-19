@@ -1,0 +1,90 @@
+/* TodoList.css */
+@keyframes animateBackground {
+    0% { background-color: #f0f8ff; }
+    50% { background-color: #e6f2ff; }
+    100% { background-color: #f0f8ff; }
+  }
+  
+  .todo-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    animation: animateBackground 10s infinite;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .input-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .input-group input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .input-group button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .input-group button:hover {
+    background-color: #0056b3;
+  }
+  
+  .task-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .task-item.completed {
+    text-decoration: line-through;
+    color: #aaa;
+  }
+  
+  .task-item span {
+    cursor: pointer;
+  }
+  
+  .task-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .task-actions button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .task-actions button:hover {
+    background-color: #ddd;
+  }
+  
